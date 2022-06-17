@@ -1,5 +1,5 @@
 function Veggie() {
-  return <div>Popular</div>;
+  return <div>Veggie</div>;
 }
 
 export default Veggie;
