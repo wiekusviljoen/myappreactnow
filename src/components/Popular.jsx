@@ -14,7 +14,17 @@ function Popular() {
     const data = await api.json();
     setPopular(data.recipes);
   };
-  return <div>{popular}</div>;
+  return (
+    <div>
+      {popular.map((recipe) => {
+        return (
+          <div key={recipe.id}>
+            <p>{recipe.title}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Popular;
